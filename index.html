@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>To Do App</title>
+        <link rel="stylesheet" href="main.css" />
+        <link
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <div class="main-container">
+            <div class="add-new">
+                <input type="text" name="" id="" />
+                <button id="add-new"><i class="material-icons">add</i></button>
+                <button id="add-new-cancel">
+                    <i class="material-icons">cancel</i>
+                </button>
+            </div>
+            <div class="tasks">
+                <div class="task">
+                    <div class="ready-view">
+                        <span class="name">
+                            <span>Task1</span>
+                            <i
+                                onclick="editTask(event)"
+                                class="material-icons edit-task"
+                                >edit</i
+                            >
+                        </span>
+                        <i
+                            class="material-icons change-status"
+                            onclick="changeTaskStatus(event)"
+                            >check_box_outline_blank</i
+                        >
+                        <i
+                            class="material-icons delete-task"
+                            onclick="deleteTask(event)"
+                            >delete_forever</i
+                        >
+                    </div>
+                    <div class="edit-view">
+                        <input type="text" name="" id="" />
+                        <button class="edit-done">
+                            <i class="material-icons" onclick="editDone(event)"
+                                >check_circle</i
+                            >
+                        </button>
+                        <button class="edit-cancel">
+                            <i
+                                class="material-icons"
+                                onclick="editCancel(event)"
+                                >cancel</i
+                            >
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="add-button">
+                <i class="material-icons">add</i>
+            </div>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
